@@ -1,5 +1,5 @@
 <?php
-$renderBase = "https://serenayogaa.onrender.com";
+$renderBase = "https://testingpop.onrender.com";
 
 /* -------------------------------------------------
    ASSET MODE — DIRECT FILE PROXY (FASTEST)
@@ -92,4 +92,5 @@ echo json_encode([
   "head" => $head[1] ?? "",
   "body" => $body[1] ?? ""
 ]);
+
 ?>
